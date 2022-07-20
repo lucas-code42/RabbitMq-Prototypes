@@ -6,7 +6,7 @@ channel = connection.channel()
 
 channel.queue_declare(queue="hello")
 
-messages = ["1", "2", "3", "4", "5"]
+messages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
 for message in messages:
     channel.basic_publish(exchange="", routing_key="hello", body=message)
